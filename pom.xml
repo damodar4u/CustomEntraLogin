@@ -8,11 +8,11 @@
     <packaging>war</packaging>
 
     <dependencies>
-        <!-- Servlet API -->
+        <!-- Javax Servlet API (for Tomcat 9 and Java EE 8) -->
         <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
-            <version>5.0.0</version>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
 
@@ -25,6 +25,7 @@
     </dependencies>
 
     <build>
+        <!-- Final WAR File Name -->
         <finalName>CustomEntraLogin</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
